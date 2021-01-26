@@ -14,14 +14,14 @@ class processSoftCRM extends Command
      *
      * @var string
      */
-    protected $signature = 'process-softcrm';
+    protected $signature = 'process-crm';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run all missing process to start using SoftCRM';
+    protected $description = 'Run all missing process to start using CRM';
 
     /**
      * Create a new command instance.
@@ -40,7 +40,7 @@ class processSoftCRM extends Command
      */
     public function handle()
     {
-        $this->info('Welcome in SoftCRM!');
+        $this->info('Welcome in CRM!');
 
         $this->info('===============================================================');
         $this->info('[Let\'s start process all migrations:]');
@@ -56,9 +56,9 @@ class processSoftCRM extends Command
 
         $this->info('===============================================================');
         $this->info('Everything looks perfect! Now you can start use SoftCRM!');
-        $this->info('If you have any question please contact with me by email: kamil.grzechulskii@gmail.com');
+        $this->info('If you have any question please contact with me by email: cselab7777@gmail.com');
 
         $systemLogs = new SystemLogService();
-        $systemLogs->loadInsertSystemLogs('First usage of process-softcrm command', 200, 1);
+        $systemLogs->loadInsertSystemLogs('First usage of process-crm command', 200, 1);
     }
 }

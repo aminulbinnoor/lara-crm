@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SoftCRM - login panel</title>
+    <title>CRM - login panel</title>
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -13,7 +13,7 @@
 <body>
 <div class="login-page">
     <div style="text-align: center;color:white">
-        <h1>SoftCRM</h1>
+        <h1>CRM</h1>
         <h4 class="small-text">Customer relationship management system</h4></div>
     <div class="form">
         @if(Session::has('message-error'))
